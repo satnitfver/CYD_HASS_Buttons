@@ -1,0 +1,36 @@
+#sample integration to HASS, this yaml is triggered via HASS MQTT, uses Google Gemini integration to speak to alexa device. There are multiple ways to set this up via HASS MQTT, this is just my use case. 
+
+alias: Button1
+description: ""
+triggers:
+  - trigger: mqtt
+    topic: esp3228r/button1
+    payload: PRESS
+conditions: []
+actions:
+  - action: media_player.volume_set
+    metadata: {}
+    data:
+      volume_level: 1
+    target:
+      device_id:
+        - xxxxx
+    enabled: true
+  - action: google_generative_ai_conversation.generate_content
+    metadata: {}
+    data:
+      prompt: >-
+        announce button number 1 has been pressed 
+    response_variable: response
+  - action: notify.alexa_media_xxxx
+    metadata: {}
+    data:
+      message: "{{ response.text  }}"
+  - action: media_player.volume_set
+    metadata: {}
+    data:
+      volume_level: 0.3
+    target:
+      device_id:
+        - xxxxxx
+mode: single
