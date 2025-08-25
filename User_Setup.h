@@ -32,4 +32,4 @@
 #define SPI_TOUCH_FREQUENCY  2500000
 
 #define USE_HSPI_PORT
-#define TFT_INVERSION_ON //reversing fillscreen
+#define TFT_INVERSION_ON //reversing fillscreen remove this, I was having issues with white/black background
