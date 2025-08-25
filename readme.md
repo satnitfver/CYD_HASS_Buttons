@@ -1,6 +1,6 @@
-# ESP32 Touchscreen MQTT Button Panel
+# ESP32 CYD (Cheap Yellow Display) Touchscreen MQTT Button Panel
 
-This project transforms an ESP32 with a TFT touchscreen into a customizable MQTT button panel. It allows you to trigger MQTT messages by touching virtual buttons on the display, making it ideal for home automation, IoT control, or interactive interfaces.
+This project transforms an ESP32 with a CYD touchscreen into a customizable MQTT button panel. It allows you to trigger MQTT messages by touching virtual buttons on the display, making it ideal for home automation, IoT control, or interactive interfaces.
 
 ---
 
