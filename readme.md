@@ -15,11 +15,10 @@ This project transforms an ESP32 with a CYD touchscreen into a customizable MQTT
 
 ---
 
-## 🛠️ Hardware Requirements
+## 🛠️ Hardware Requirements (working versions, from Ali Express)
 
-* **ESP32 Development Board:** Any ESP32 board will work, but ensure it has sufficient GPIOs for the display and touchscreen.
-* **TFT Display with XPT2046 Touchscreen:** This code is specifically written for a display using the TFT_eSPI library and an XPT2046 resistive touchscreen controller (e.g., a 2.8" or 3.2" TFT with integrated touch).
-* **Connecting Wires / Breadboard**
+* **2.8inch ESP32 Module TFT LCD Display with Acrylic Case Dual-core ESP32-2432S028R WIFI+BT 240X320 ILI9341 Resistive Touchscreen
+* **TENSTAR ROBOT ESP32 LVGL WIFI&Bluetooth Development Board 2.8 Inch 240*320 Smart Display Screen TFT Module With Touch
 
 ---
 
